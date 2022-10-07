@@ -1,6 +1,5 @@
 import "../css/TestDisplay.css";
 import styled from "styled-components";
-import { ReactComponent as Check } from "../icons/uncheck.svg";
 
 function TestDisplay() {
   return (
