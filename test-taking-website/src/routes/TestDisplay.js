@@ -33,7 +33,51 @@ function TestDisplay() {
           </button>
         </header>
       </div>
-      <main></main>
+      <main>
+        <div className="container">
+          <div className="main--question_number">
+            Question 1 - Merge multiple arrays together
+          </div>
+          <div className="main--question_text">Choose appropriate options.</div>
+          <div className="question">
+            <span className="block--blue">const </span>fruits = [
+            <span className="block--green">
+              'Apple', 'Banana', 'Strawberry']
+            </span>
+            ;<br />
+            <span className="block--blue">const</span> moreFruits = [
+            <span className="block--green">'Mango', 'Cherry'</span>];
+            <br />
+            <span className="block--blue">const </span>combinedFruits = fruits.
+            <span className="block--red">concat</span>(moreFruits);
+            <br />
+            console.<span className="block--red">log</span>(combinedFruits);
+            <br />
+            <span className="block--grey">
+              // ["Apple", "Banana", "Strawberry", "Mango", "Cherry"]
+            </span>
+            <br />
+            <br />
+            <span className="block--grey">
+              // The 'fruits' array remains unchanged.
+            </span>
+            <br />
+            console.<span className="block--red">log</span>(fruits);
+            <br />
+            <span className="block--grey">
+              // The 'fruits' array remains unchanged.
+            </span>
+            <br /> <br />
+            <span className="block--grey">
+              // The 'moreFruits' array also remains unchanged.
+            </span>
+            <br />
+            console.<span className="block--red">log</span>(moreFruits);
+            <br />
+            <span className="block--grey">// ["Mango", "Cherry"]</span>
+          </div>
+        </div>
+      </main>
       <footer></footer>
     </>
   );

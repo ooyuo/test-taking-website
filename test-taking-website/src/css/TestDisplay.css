@@ -60,3 +60,30 @@ header {
   display: flex;
   align-items: center;
 }
+
+.question {
+  white-space: pre-line;
+  background-color: black;
+  color: beige;
+}
+
+.block--blue {
+  color: rgb(83, 199, 248);
+}
+
+.block--green {
+  color: rgb(149, 246, 149);
+}
+.block--red {
+  color: rgb(252, 109, 109);
+}
+.block--grey {
+  color: rgb(179, 172, 172);
+}
+.main--question_number {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.main--question_text {
+  margin-bottom: 10px;
+}
