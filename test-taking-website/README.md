@@ -2,7 +2,7 @@
 
 I created a layout that allows you to take 10 multiple-choice tests. It is a problem of finding the right JavaScript method to fit the underline in the problem.  
   
-![Main Page](.src/icons/main-ttw.JPG)    
+![Main Page](./src/icons/main-ttw.JPG)    
 ```
 1. It's a sector where you can see the problem.  
 2. If you click the button in sector 3, the clicked method name will appear in the underlined area.  
@@ -10,9 +10,9 @@ I created a layout that allows you to take 10 multiple-choice tests. It is a pro
 4. Select the answer and click the submit button to display a different screen depending on the result.  
 ```  
   
-![Sub Page - Correct](.src/icons/correct-ttw.JPG)  
+![Sub Page - Correct](./src/icons/correct-ttw.JPG)  
 When the answer is correct
-![Sub Page - Inorrect](.src/icons/incorrect-ttw.JPG)  
+![Sub Page - Inorrect](./src/icons/incorrect-ttw.JPG)  
 When the answer is incorrect
     
 # Getting Started with Create React App
