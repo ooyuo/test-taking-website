@@ -59,6 +59,7 @@ header {
   border: none;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .question {
@@ -103,4 +104,10 @@ header {
 .question--item {
   display: flex;
   justify-content: space-around;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

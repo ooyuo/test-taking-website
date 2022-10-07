@@ -1,6 +1,7 @@
 import "../css/TestDisplay.css";
 import styled from "styled-components";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function TestDisplay() {
   let [text, setText] = useState("______");
@@ -8,6 +9,7 @@ function TestDisplay() {
     text = e.target.value;
     setText(text);
   };
+
   return (
     <>
       <div className="container">
@@ -29,14 +31,22 @@ function TestDisplay() {
               <span className="question-processing">2 / 2</span>
             </div>
           </div>
-          <button className="qustion-btn">
-            <span>NEXT</span>
-            <img
-              src={require("../icons/right-arrow.gif")}
-              width="30"
-              height="30"
-            />
-          </button>
+          <div className="qustion-btn">
+            <Link
+              className="link"
+              to={{
+                pathname: `/test-taking-website/2`,
+                state: { answer: text },
+              }}
+            >
+              <span>NEXT</span>
+              <img
+                src={require("../icons/right-arrow.gif")}
+                width="30"
+                height="30"
+              />
+            </Link>
+          </div>
         </header>
       </div>
       <main>
