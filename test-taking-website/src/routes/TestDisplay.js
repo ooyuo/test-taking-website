@@ -22,7 +22,7 @@ function TestDisplay() {
             <Link
               className="link"
               to={{
-                pathname: `/test-taking-website/:result`,
+                pathname: `/:result`,
                 state: { answer: text },
               }}
             >

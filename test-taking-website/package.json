@@ -38,11 +38,8 @@
       "last 1 safari version"
     ]
   },
-<<<<<<< HEAD
   "devDependencies": {
     "gh-pages": "^4.0.0"
   },
   "homepage": "https://ooyuo.github.io/test-taking-website"
-=======
->>>>>>> 4608f6834a33dff98ce5f4e628f2e545320430af
 }
