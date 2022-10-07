@@ -115,6 +115,10 @@ header {
   color: white;
   cursor: pointer;
 }
+.item:active {
+  background-color: black;
+  color: white;
+}
 
 .question--item {
   display: flex;

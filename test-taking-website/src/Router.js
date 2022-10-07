@@ -7,7 +7,7 @@ function Router() {
     <>
       <BrowserRouter>
         <Switch>
-          <Route path="/test-taking-website/result/">
+          <Route path="/test-taking-website/:result">
             <TestResult />
           </Route>
           <Route path="/test-taking-website/">
