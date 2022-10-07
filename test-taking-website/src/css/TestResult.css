@@ -1,0 +1,17 @@
+.correct {
+  font-size: 100px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: rgb(101, 248, 133);
+}
+.incorrect {
+  font-size: 100px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: rgb(234, 64, 64);
+}
+.wrapper-img {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}

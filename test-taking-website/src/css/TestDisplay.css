@@ -1,9 +1,9 @@
 #root {
+}
+body {
   border: 3px solid black;
   border-radius: 50px;
   padding: 10px 50px;
-}
-body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -113,6 +113,7 @@ header {
 .item:hover {
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
 .question--item {
@@ -126,4 +127,10 @@ header {
   align-items: center;
   text-decoration: none;
   color: black;
+}
+
+.wrapper-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

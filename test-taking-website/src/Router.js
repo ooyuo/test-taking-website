@@ -1,12 +1,16 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import TestDisplay from "./routes/TestDisplay";
+import TestResult from "./routes/TestResult";
 
 function Router() {
   return (
     <>
       <BrowserRouter>
         <Switch>
-          <Route path="/test-talking-website/:testId">
+          <Route path="/test-taking-website/result">
+            <TestResult />
+          </Route>
+          <Route path="/test-taking-website/">
             <TestDisplay />
           </Route>
         </Switch>

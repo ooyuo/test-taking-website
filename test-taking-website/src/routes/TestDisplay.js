@@ -22,7 +22,7 @@ function TestDisplay() {
             <Link
               className="link"
               to={{
-                pathname: `/test-taking-website/result`,
+                pathname: `test-taking-website/result`,
                 state: { answer: text },
               }}
             >
@@ -45,9 +45,10 @@ function TestDisplay() {
           <div className="question">
             <span className="block--blue">const </span>fruits = [
             <span className="block--green">
-              'Apple', 'Banana', 'Strawberry']
+              'Apple', 'Banana', 'Strawberry'
             </span>
-            ;<br />
+            ];
+            <br />
             <span className="block--blue">const</span> moreFruits = [
             <span className="block--green">'Mango', 'Cherry'</span>];
             <br />
