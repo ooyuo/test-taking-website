@@ -17,29 +17,16 @@ function TestDisplay() {
           <div>
             <img src={require("../icons/test.png")} width="40" height="40" />
           </div>
-          <div className="wrapper--question">
-            <div className="question-status"></div>
-            <div className="question-info-wrapper">
-              <span className="question-number">Question 1.</span>
-              <span className="question-processing">1 / 2</span>
-            </div>
-          </div>
-          <div className="wrapper--question">
-            <div className="question-status"></div>
-            <div className="question-info-wrapper">
-              <span className="question-number">Question 2.</span>
-              <span className="question-processing">2 / 2</span>
-            </div>
-          </div>
+
           <div className="qustion-btn">
             <Link
               className="link"
               to={{
-                pathname: `/test-taking-website/2`,
+                pathname: `/test-taking-website/result`,
                 state: { answer: text },
               }}
             >
-              <span>NEXT</span>
+              <span>SUBMIT</span>
               <img
                 src={require("../icons/right-arrow.gif")}
                 width="30"
@@ -52,7 +39,7 @@ function TestDisplay() {
       <main>
         <div className="container">
           <div className="main--question_number">
-            Question 1 - Merge multiple arrays together
+            Question - Merge multiple arrays together
           </div>
           <div className="main--question_text">Choose appropriate options.</div>
           <div className="question">
