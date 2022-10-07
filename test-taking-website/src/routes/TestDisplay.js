@@ -1,11 +1,12 @@
 import "../css/TestDisplay.css";
 import styled from "styled-components";
+import { useState } from "react";
 
 function TestDisplay() {
-  let text = "";
+  let [text, setText] = useState("______");
   const changeText = (e) => {
     text = e.target.value;
-    console.log(text);
+    setText(text);
   };
   return (
     <>
