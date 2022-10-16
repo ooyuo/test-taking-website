@@ -1,14 +1,25 @@
 import "../css/TestDisplay.css";
+import "../css/responsive.css";
 import styled from "styled-components";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Modal from "react-modal";
 
 function TestDisplay() {
+  const Modal = styled.div`
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+  `;
+
   let [text, setText] = useState("______");
   const changeText = (e) => {
     text = e.target.value;
     setText(text);
   };
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (
     <>
@@ -19,20 +30,63 @@ function TestDisplay() {
           </div>
 
           <div className="qustion-btn">
-            <Link
+            {/* <Link
               className="link"
               to={{
-                pathname: `/:result`,
+                pathname: `/test-taking-website/result`,
                 state: { answer: text },
               }}
-            >
-              <span>SUBMIT</span>
+            > */}
+            <button onClick={() => setModalIsOpen(true)} className="btn-submit">
+              <span>Submit</span>
               <img
                 src={require("../icons/right-arrow.gif")}
                 width="30"
                 height="30"
               />
-            </Link>
+            </button>
+            {modalIsOpen ? (
+              <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={() => setModalIsOpen(false)}
+              >
+                <div className="modal-body">
+                  <div className="container">
+                    <div className="cookiesContent" id="cookiesPopup">
+                      <button
+                        className="close"
+                        onClick={() => setModalIsOpen(false)}
+                      >
+                        ✖
+                      </button>
+                      {text === "concat" ? (
+                        <img
+                          src={require("../icons/successfully-done.gif")}
+                          className="image-result"
+                        />
+                      ) : (
+                        <img
+                          src={require("../icons/fail.gif")}
+                          className="image-result"
+                        />
+                      )}
+
+                      <p className="modal-text">
+                        {text === "concat" ? "correct" : "incorrect"}
+                      </p>
+                      <button
+                        className="accept"
+                        onClick={() => setModalIsOpen(false)}
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </Modal>
+            ) : null}
+
+            {/* </Link> */}
           </div>
         </header>
       </div>

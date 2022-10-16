@@ -1,0 +1,18 @@
+@media screen and (max-width: 855px) {
+  .question--item {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .item {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .question--item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .item {
+    margin: 5px;
+  }
+}
