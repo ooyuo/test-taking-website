@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/test-taking-website/static/css/main.43333cac.css",
-    "main.js": "/test-taking-website/static/js/main.b310b02c.js",
+    "main.css": "/test-taking-website/static/css/main.4a10f22d.css",
+    "main.js": "/test-taking-website/static/js/main.1bc6f36c.js",
     "static/media/successfully-done.gif": "/test-taking-website/static/media/successfully-done.0749a0fba4e672ae43e3.gif",
     "static/media/fail.gif": "/test-taking-website/static/media/fail.618fedd1674c321dd6a4.gif",
     "static/media/test.png": "/test-taking-website/static/media/test.4d91a877331ae240c8b6.png",
     "static/media/right-arrow.gif": "/test-taking-website/static/media/right-arrow.27ba7529fe49f23dc35d.gif",
     "index.html": "/test-taking-website/index.html",
-    "main.43333cac.css.map": "/test-taking-website/static/css/main.43333cac.css.map",
-    "main.b310b02c.js.map": "/test-taking-website/static/js/main.b310b02c.js.map"
+    "main.4a10f22d.css.map": "/test-taking-website/static/css/main.4a10f22d.css.map",
+    "main.1bc6f36c.js.map": "/test-taking-website/static/js/main.1bc6f36c.js.map"
   },
   "entrypoints": [
-    "static/css/main.43333cac.css",
-    "static/js/main.b310b02c.js"
+    "static/css/main.4a10f22d.css",
+    "static/js/main.1bc6f36c.js"
   ]
 }
