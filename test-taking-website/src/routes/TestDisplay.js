@@ -46,10 +46,7 @@ function TestDisplay() {
               />
             </button>
             {modalIsOpen ? (
-              <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={() => setModalIsOpen(false)}
-              >
+              <Modal isOpen={modalIsOpen}>
                 <div className="modal-body">
                   <div className="container">
                     <div className="cookiesContent" id="cookiesPopup">
@@ -64,7 +61,7 @@ function TestDisplay() {
                           src={require("../icons/successfully-done.gif")}
                           className="image-result"
                         />
-                      ) : (
+                      ) : text == "______" ? null : (
                         <img
                           src={require("../icons/fail.gif")}
                           className="image-result"
@@ -72,7 +69,11 @@ function TestDisplay() {
                       )}
 
                       <p className="modal-text">
-                        {text === "concat" ? "correct" : "incorrect"}
+                        {text === "concat"
+                          ? "Correct"
+                          : text == "______"
+                          ? "Choose the answer"
+                          : "Incorrect"}
                       </p>
                       <button
                         className="accept"
